@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: violet;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue; /*comentário*/
+        }
+    </Style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--comentário-->
+    <script>
+        // Number.parseInt(n) ou Number.parseFloat(n) - convertem string para número
+
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) // recebe uma string
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // recebe uma string
+
+        // Ou simplesmente Number(n) caso seja indiferente se o resultado é um int ou float
+
+        var s = n1 + n2
+        window.alert('A soma é: ' + s)
+        // nas versões mais modernas de javascript
+        // window.alert('A soma é: ${s}')
+
+        //number + number para adição
+        //string + string para concatenação
+        //o comando prompt retoma sempre uma string
+
+        // converter número para string
+        // String(n) ou n.toString()
+        // exp:
+        // window.alert('A soma é: ' + s.toString())
+
+
+        // s.length - número de caracteres da string
+        // s.toUpperCase() 
+        // s.toLowerCase()
+        
+    </script>
+</body>
+</html>

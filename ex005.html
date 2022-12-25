@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color:royalblue;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    } 
+
+    </style>
+</head>
+<body>
+<div id="msg"> Clique em mim</div>
+<div name="msg"> Ou aqui</div>
+<p>Olá. <strong>Bom dia!</strong></p>
+<p>Olá. Boa noite.</p>
+<script>
+    var corpo = window.document.body 
+    var p1= window.document.getElementsByTagName('p')[0]
+
+    window.document.write("Em javascript: " + p1.innerHTML + "<br>")
+    window.document.write("Em javascript: " + p1.innerText)
+
+    //innerText mostra o texto sem formatação
+    //innerHTML mostra o texto com formatação
+
+    p1.style.color = 'orange' 
+    corpo.style.background = 'black'
+
+    var div = window.document.getElementById('msg')
+
+    div.style.background = 'orange'
+    //div.innerText = "Estou a espera..."
+
+    var div = window.document.getElementsByName('msg')[0]
+    div.innerText = "Alterado"
+
+    var d = window.document.querySelector('div#msg')
+    d.style.background = 'blue'
+
+</script>
+</body>
+</html>
